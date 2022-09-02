@@ -12,7 +12,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -25,26 +24,28 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
+### Screenshot
+
 # Mobile Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Mobile%20preview.PNG)
 
 # Mobile Preview - actvive
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Mobile%20preview%20-%20active.PNG)
 
 # Desktop Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Desktop%20preview.PNG)
 
 # Desktop Preview - active 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Desktop%20preview%20-%20active.PNG)
 
 ### Links
 
- - Source code: []()
- - Live website: []()
+ - Source code: [https://github.com/romila2003/Time-tracking-dashboard/blob/main/Mobile%20preview%20-%20active.PNG](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Mobile%20preview%20-%20active.PNG)
+ - Live website: [https://romila-time-tracking-dashboard.netlify.app/](https://romila-time-tracking-dashboard.netlify.app/)
 
 ## My process
 
