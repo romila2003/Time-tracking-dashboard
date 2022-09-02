@@ -26,19 +26,11 @@ Users should be able to:
 
 ### Screenshot
 
-# Mobile Preview 
-
-![screenshot](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Mobile%20preview.PNG)
-
-# Mobile Preview - actvive
+# Mobile Preview
 
 ![screenshot](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Mobile%20preview%20-%20active.PNG)
 
 # Desktop Preview 
-
-![screenshot](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Desktop%20preview.PNG)
-
-# Desktop Preview - active 
 
 ![screenshot](https://github.com/romila2003/Time-tracking-dashboard/blob/main/Desktop%20preview%20-%20active.PNG)
 
