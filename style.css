@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  background-color: hsl(226deg, 43%, 10%);
+  color: hsl(236deg, 100%, 87%);
+  padding: 40px 20px;
+  display: grid;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+  }
+}
+
+header, main {
+  max-width: 400px;
+  display: grid;
+}
+
+@media (min-width: 900px) {
+  header {
+    max-width: 220px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr;
+    margin-right: 1em;
+  }
+}
+header .jeremy {
+  background-color: hsl(246deg, 80%, 60%);
+  border-radius: 12px;
+  padding: 1em;
+  display: flex;
+  z-index: 100;
+  position: relative;
+}
+@media (min-width: 900px) {
+  header .jeremy {
+    padding: 6.5em 1em 4em 1.5em;
+    margin-top: -1em;
+    flex-direction: column;
+  }
+  header .jeremy .profile, header .jeremy .flex {
+    margin-top: -3em;
+  }
+}
+header .jeremy img {
+  width: 15%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+@media (min-width: 900px) {
+  header .jeremy img {
+    width: 40%;
+  }
+}
+header .jeremy .flex {
+  margin-left: 1em;
+  margin-top: 0.2em;
+}
+@media (min-width: 900px) {
+  header .jeremy .flex {
+    margin: 1em 0 0 0;
+  }
+}
+header .jeremy .flex p, header .jeremy .flex h1 {
+  font-weight: 300;
+}
+header .jeremy .flex p {
+  font-size: 0.8rem;
+  margin-bottom: 0.2em;
+}
+@media (min-width: 900px) {
+  header .jeremy .flex p {
+    font-size: 1rem;
+  }
+}
+header .jeremy .flex h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+@media (min-width: 900px) {
+  header .jeremy .flex h1 {
+    font-size: 2rem;
+  }
+}
+header .duration {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 0 0 12px 12px;
+  padding: 1.5em;
+  display: flex;
+  margin-top: -0.5em;
+  justify-content: space-between;
+}
+@media (min-width: 900px) {
+  header .duration {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header .duration button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  opacity: 70%;
+  font-size: 1rem;
+}
+@media (min-width: 900px) {
+  header .duration button {
+    text-align: left;
+    margin-left: 0.5em;
+    margin-top: 1em;
+  }
+}
+header .duration button:hover, header .duration button:focus {
+  color: white;
+  opacity: 100;
+}
+header .duration .active {
+  color: white;
+  opacity: 100;
+}
+
+@media (min-width: 900px) {
+  main {
+    max-width: 700px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.block {
+  position: relative;
+  margin: 1.5em 0 0.5em 0;
+  border-radius: 17px;
+  padding-top: 2.3em;
+  z-index: 2;
+  overflow: hidden;
+  display: grid;
+  max-width: 400px;
+}
+@media (min-width: 900px) {
+  .block {
+    margin: 0 1em 1em 0;
+    width: 220px;
+    border-radius: 17px 17px 15px 15px;
+  }
+}
+.block .content {
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 17px 17px 12px 12px;
+  padding: 1.8em 1em;
+  cursor: pointer;
+}
+.block .content:hover {
+  background-color: hsl(236deg, 41%, 34%);
+}
+@media (min-width: 900px) {
+  .block .content {
+    padding: 1.2em 1.5em 1.2em 1.5em;
+    border-radius: 20px 20px 12px 12px;
+  }
+}
+.block .img {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  z-index: -1;
+}
+.block .title {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.block .numbers {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+@media (min-width: 900px) {
+  .block .numbers {
+    font-size: 3rem;
+  }
+}
+.block .last-week {
+  margin-top: 3em;
+  font-size: 0.9rem;
+}
+@media (min-width: 900px) {
+  .block .last-week {
+    margin-top: 2em;
+  }
+}
+.block .ellipsis {
+  cursor: pointer;
+  width: 6%;
+  height: 10%;
+  margin-top: 0.4em;
+}
+@media (min-width: 900px) {
+  .block .ellipsis {
+    width: 12%;
+    margin-top: 0.3em;
+  }
+}
+.block .flex {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 900px) {
+  .block .column {
+    flex-direction: column;
+  }
+}
+
+.work {
+  background-color: hsl(15deg, 100%, 70%);
+}
+
+.play {
+  background-color: hsl(195deg, 74%, 62%);
+}
+
+.study {
+  background-color: hsl(348deg, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145deg, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264deg, 64%, 52%);
+}
+
+.self-care {
+  background-color: hsl(43deg, 84%, 65%);
+}/*# sourceMappingURL=style.css.map */

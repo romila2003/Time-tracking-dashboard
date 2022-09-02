@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+$blue: hsl(246, 80%, 60%);
+$work: hsl(15, 100%, 70%);
+$play: hsl(195, 74%, 62%);
+$study: hsl(348, 100%, 68%);
+$exercise: hsl(145, 58%, 55%);
+$social: hsl(264, 64%, 52%);
+$self-care: hsl(43, 84%, 65%);
+$very-dark-blue: hsl(226, 43%, 10%);
+$dark-blue: hsl(235, 46%, 20%);
+$dark-blue-hover: hsl(236, 41%, 34%);
+$desaturated-blue: hsl(246, 80%, 60%);
+$pale-blue: hsl(236, 100%, 87%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: $very-dark-blue;
+    color: $pale-blue;
+    padding: 40px 20px;
+    display: grid;
+    justify-content: center;
+
+    @media (min-width: 900px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0 20px;
+    }
+}
+
+header, main {
+    max-width: 400px;
+    display: grid;
+}
+
+header {
+    @media (min-width: 900px) {
+        max-width: 220px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.4fr;
+        margin-right: 1em;
+    }
+
+    .jeremy {
+        background-color: $desaturated-blue;
+        border-radius: 12px;
+        padding: 1em;
+        display: flex;
+        z-index: 100;
+        position: relative;
+
+        @media (min-width: 900px) {
+            padding: 6.5em 1em 4em 1.5em;
+            margin-top: -1em;
+            flex-direction: column;
+
+            .profile, .flex {
+                margin-top: -3em;
+            }
+        }
+        
+            img {
+                width: 15%;
+                height: 100%;
+                border-radius: 50%;
+                border: 2px solid white;
+
+                @media (min-width: 900px) {
+                    width: 40%;
+                }
+            }
+
+            .flex {
+                margin-left: 1em;
+                margin-top: 0.2em;
+
+                @media (min-width: 900px) {
+                    margin: 1em 0 0 0;
+                }
+
+                p, h1 {
+                    font-weight: 300;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    margin-bottom: 0.2em;
+
+                    @media (min-width: 900px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                h1 {
+                    color: white;
+                    font-size: 1.5rem;
+
+                    @media (min-width: 900px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            
+        }
+    
+    .duration {
+        background-color: $dark-blue;
+        border-radius: 0 0 12px 12px;
+        padding: 1.5em;
+        display: flex;
+        margin-top: -0.5em;
+        justify-content: space-between;
+
+        @media (min-width: 900px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            color: inherit;
+            font-family: inherit;
+            opacity: 70%;
+            font-size: 1rem;
+            
+            @media (min-width: 900px) {
+                text-align: left;
+                margin-left: 0.5em;
+                margin-top: 1em;                
+            }
+
+            &:hover, &:focus {
+                color: white;
+                opacity: 100;
+            }
+        }
+
+        .active {
+            color: white;
+            opacity: 100;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        max-width: 700px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+.block {
+    position: relative;
+    margin: 1.5em 0 0.5em 0;
+    border-radius: 17px;
+    padding-top: 2.3em;
+    z-index: 2;
+    overflow: hidden;
+    display: grid;
+    max-width: 400px;
+    @media (min-width: 900px) {
+        margin: 0 1em 1em 0;
+        width: 220px;
+        border-radius: 17px 17px 15px 15px;
+    }
+
+        .content {
+            background-color: $dark-blue;
+            border-radius: 17px 17px 12px 12px;
+            padding: 1.8em 1em;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $dark-blue-hover;
+            }
+
+            @media (min-width: 900px) {
+                padding: 1.2em 1.5em 1.2em 1.5em;
+                border-radius: 20px 20px 12px 12px;
+            }
+        }
+
+        .img {
+            position: absolute;
+            top: 0;
+            right: 5px;
+            z-index: -1;
+        }
+
+        .title {
+            color: white;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .numbers {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-top: 0.5em;
+
+            @media (min-width: 900px) {
+                font-size: 3rem;
+            }
+        }
+
+        .last-week {
+            margin-top: 3em;
+            font-size: 0.9rem;
+
+            @media (min-width: 900px) {
+                margin-top: 2em;
+            }
+        }
+
+        .ellipsis {
+            cursor: pointer;
+            width: 6%;
+            height: 10%;
+            margin-top: 0.4em;
+
+            @media (min-width: 900px) {
+                width: 12%;
+                margin-top: 0.3em;
+            }
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 900px) {
+            .column {
+                flex-direction: column;
+            }
+        }
+}
+
+.work {
+    background-color: $work;
+}
+
+.play {
+    background-color: $play;
+}
+
+.study {
+    background-color: $study;
+}
+
+.exercise {
+    background-color: $exercise;
+}
+
+.social {
+    background-color: $social;
+}
+
+.self-care {
+    background-color: $self-care;
+}
