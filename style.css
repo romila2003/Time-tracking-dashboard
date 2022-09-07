@@ -11,21 +11,24 @@ body {
   background-color: hsl(226deg, 43%, 10%);
   color: hsl(236deg, 100%, 87%);
   padding: 40px 10px;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 @media (min-width: 900px) {
   body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     height: 100vh;
     padding: 0 20px;
   }
 }
 
 header, main {
-  max-width: 400px;
+  max-width: 700px;
+  width: 100%;
   display: grid;
 }
 
@@ -137,7 +140,6 @@ header .duration .active {
 
 @media (min-width: 900px) {
   main {
-    max-width: 700px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
