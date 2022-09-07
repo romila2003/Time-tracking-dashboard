@@ -152,7 +152,6 @@ header .duration .active {
   z-index: 2;
   overflow: hidden;
   display: grid;
-  max-width: 400px;
 }
 @media (min-width: 900px) {
   .block {
