@@ -25,8 +25,9 @@ body {
     background-color: $very-dark-blue;
     color: $pale-blue;
     padding: 40px 10px;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     @media (min-width: 900px) {
         display: flex;
@@ -34,11 +35,13 @@ body {
         align-items: center;
         height: 100vh;
         padding: 0 20px;
+        flex-direction: row;
     }
 }
 
 header, main {
-    max-width: 400px;
+    width: 100%;
+    max-width: 700px;
     display: grid;
 }
 
@@ -157,7 +160,6 @@ header {
 
 @media (min-width: 900px) {
     main {
-        max-width: 700px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
@@ -171,7 +173,6 @@ header {
     z-index: 2;
     overflow: hidden;
     display: grid;
-    max-width: 400px;
     @media (min-width: 900px) {
         margin: 0 1em 1em 0;
         width: 220px;
